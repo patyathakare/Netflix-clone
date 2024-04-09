@@ -1,46 +1,73 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
+    font-family: verdana;
 }
 
-body{
-    background-color:black;
+body {
+    background-color: black;
 }
 
-main{
-   background: url("templates/images/bgimg.jpg" ) center center no-repeat;
+main {
+    background: url("templates/images/bgimg.jpg") center center no-repeat;
     height: 90vh;
     position: relative;
-    width: max(1000px,100%);
+    width: max(1000px, 100%);
     border-bottom: 6px solid gray
 }
 
-main::before{
+main::before {
     content: "";
     background-color: black;
-position: absolute;
-height:calc(90vh + 6px);
-width: 100%;
-opacity: 0.7;
-top: 0px;
-left: 0px;
+    position: absolute;
+    height: calc(90vh + 6px);
+    width: 100%;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
 
 }
 
-main nav{
+main nav {
     display: flex;
     height: 90px;
     width: 80vw;
     justify-content: space-between;
     margin: auto;
     align-items: center;
+    column-gap: 50px;
 }
 
-main nav img{
+main nav img {
     width: 150px;
 }
 
-main .info{
+nav .btns {
+    display: flex;
+    gap: 19px;
+}
+
+main nav #eng-btn {
+    padding: 6px 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.3);
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+nav #sign-btn {
+    padding: 7px 17px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main .info {
     color: white;
     display: flex;
     flex-direction: column;
@@ -48,28 +75,53 @@ main .info{
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding:0px 20px;
+    padding: 0px 30px;
     text-align: center;
 }
 
-main .info :nth-child(1){
+main .info> :nth-child(1) {
     font-weight: bolder;
-    font-size: 2.5rem;
-    font-weight: 700;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    
 }
 
-main .info :nth-child(2){
-    font-size: 1.833rem;
-font-weight: 400;
+main .info> :nth-child(2) {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
 }
 
-main .info :nth-child(3){
-    font-size:1.3rem;
-    letter-spacing: 1px;
+main .info> :nth-child(3) {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
 }
 
-.highlight{
+.highlight {
     position: relative;
     z-index: 2;
+}
+
+.info .sign-start-btn {
+    gap: 20px;
+    display: flex;
+}
+
+.info .sign-start-btn input {
+    padding: 9px 45px 9px 6px;
+    border: 1px solid white;
+    background-color: rgba(23, 23, 23, 0.3);
+}
+
+.info #start-btn {
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    cursor:pointer ;
 }
