@@ -16,14 +16,13 @@ main {
     background: url("templates/images/bgimg.jpg") center center no-repeat;
     height: 90vh;
     position: relative;
-   width: 100%;
 }
 
 /* black layer effect on main section */
 main::before {
     height: 90vh;
     content: "";
-    width: 100vw;
+    width: 100%;
     position: absolute;
     background-color: black;
     opacity: 0.7;
