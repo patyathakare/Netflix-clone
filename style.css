@@ -1,127 +1,206 @@
+/* by default all */
 * {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     font-family: verdana;
+    color: white;
 }
 
+/* all body  */
 body {
     background-color: black;
 }
 
+/* main section background */
 main {
     background: url("templates/images/bgimg.jpg") center center no-repeat;
     height: 90vh;
     position: relative;
-    width: max(1000px, 100%);
-    border-bottom: 6px solid gray
+   width: 100%;
 }
 
+/* black layer effect on main section */
 main::before {
+    height: 90vh;
     content: "";
-    background-color: black;
+    width: 100vw;
     position: absolute;
-    height: calc(90vh + 6px);
-    width: 100%;
+    background-color: black;
     opacity: 0.7;
-    top: 0px;
-    left: 0px;
-
 }
 
+/* navigation bar (netflix logo and some buttons) */
 main nav {
     display: flex;
     height: 90px;
-    width: 80vw;
+    align-items: center;
+    width: 75vw;
     justify-content: space-between;
     margin: auto;
-    align-items: center;
-    column-gap: 50px;
 }
 
+/* netflix image logo */
 main nav img {
     width: 150px;
 }
 
-nav .btns {
-    display: flex;
-    gap: 19px;
-}
-
-main nav #eng-btn {
-    padding: 6px 25px;
-    font-weight: bold;
-    color: white;
+/* buttons in navbar  */
+nav #eng-btn {
+    padding: 7px 35px;
+   
     background-color: rgba(23, 23, 23, 0.3);
-    border: 1px solid gray;
-    border-radius: 4px;
-    cursor: pointer;
+    border: 1px solid;
 }
 
 nav #sign-btn {
-    padding: 7px 17px;
+    padding: 7px 15px;
     background-color: red;
     border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
+   
+    margin-left: 25px;
 }
 
-main .info {
+/* main section front page information  */
+main section {
+    position: relative;
     color: white;
+    height: calc(100% - 90px);
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/*  front page information 3 lines */
+main section> :nth-child(1) {
+    font-size: 3rem;
+}
+
+main section> :nth-child(2) {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+main section> :nth-child(3) {
+    font-size: 1.5rem;
+    margin: 1rem 0px;
+}
+
+/* home page email box  */
+section #email {
+    padding: 15px 20px 15px 10px;
+    background-color: rgba(23, 23, 23, 0.3);
+    border: 1px solid;
+    width: 20vw;
+}
+
+/* start button on home page beside of email box */
+section #start-btn {
+    padding: 15px 20px;
+    background-color: red;
+    border: none;
+    margin-left: 25px;
+    font-size: large;
+}
+
+/* container in every section  */
+.container{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding: 50px;
+    align-items: center;
+}
+
+/* every image and div tag in container tag  */
+.container div {
+    position: relative;
+}
+
+.container img {
+    width: 40vw;
+}
+
+/* section one */
+#one .container #tv-section video {
+    position: absolute;
+    width: 32vw;
+    top: 70px;
+    right: 61px;
+    z-index: -1;
+}
+
+
+/* section two */
+
+
+/* section three */
+#three #rajma-chawal video {
+    width: 25vw;
+    position: absolute;
+    right: 120px;
+    top: 52px;
+    z-index: -1;
+}
+
+/* section five */
+#five div{
+    text-align: center;    
+}
+#five .drop-hide{
+    text-align: left;
+    background-color: rgb(32, 31, 31);
+    display: none;
+}
+#five div  p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+#five #dropdown-btns {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 90px);
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    padding: 0px 30px;
-    text-align: center;
 }
 
-main .info> :nth-child(1) {
-    font-weight: bolder;
-    font-size: 3rem;
-    font-weight: 900;
-    text-align: center;
-    
+#five #dropdown-btns button {
+    background-color: rgb(32, 31, 31);
+    border: none;
+    padding: 30px;
+    margin: 5px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-main .info> :nth-child(2) {
-    font-size: 2rem;
-    font-weight: 400;
-    text-align: center;
+
+/* utility classes.. */
+
+/* all h2 in body */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-main .info> :nth-child(3) {
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: center;
-}
+/* all paragraph tag in container div */
+.container p{
+    font-size: 1.3rem;
+} 
 
+/*  netflix logo and buttons highlighter */
 .highlight {
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
-.info .sign-start-btn {
-    gap: 20px;
-    display: flex;
+/*after  border of every section  */
+.sec-border {
+    border-bottom: 7px solid gray;
 }
 
-.info .sign-start-btn input {
-    padding: 9px 45px 9px 6px;
-    border: 1px solid white;
-    background-color: rgba(23, 23, 23, 0.3);
-}
-
-.info #start-btn {
-    padding: 10px 20px;
-    background-color: red;
-    border: none;
+/* for all buttons for cursor pointer and bold font */
+.common {
+    cursor: pointer;
+    font-weight: bold;
     border-radius: 4px;
-    font-size: 15px;
-    color: white;
-    font-weight: 600;
-    cursor:pointer ;
 }
