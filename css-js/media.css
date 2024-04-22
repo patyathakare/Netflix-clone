@@ -1,0 +1,220 @@
+@media only screen and (min-width:995px) and (max-width:1200px) {
+
+    #three #rajma-chawal video {
+
+        right: 78px;
+        top: 36px;
+    }
+}
+
+
+
+@media only screen and (min-width:770px) and (max-width:995px) {
+
+    main {
+        height: 72vh;
+    }
+
+    main::before{
+        height: 74vh;
+    }
+
+    main section {
+        padding: 4px;
+    }
+
+    section #email {
+        width: 41vw;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1.1rem;
+    }
+
+
+    #one .container #tv-section video {
+        top: 51px;
+        right: 41px;
+    }
+
+
+    #three #rajma-chawal video {
+        right: 57px;
+        top: 29px;
+    }
+}
+
+
+@media only screen and (min-width:590px) and (max-width:770px) {
+
+
+    main {
+        height: 65vh;
+    }
+
+    main::before{
+        height: 67vh;
+    }
+
+    main section {
+        padding: 4px;
+    }
+
+    section #email {
+        width: 41vw;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 32px 13px;
+        gap: 20px;
+    }
+
+    main section> :nth-child(1) {
+        font-size: 2.5rem;
+    }
+
+    main section> :nth-child(2) {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    main section> :nth-child(3) {
+        font-size: 1rem;
+        margin: 1rem 0px;
+    }
+
+    #one .container #tv-section video {
+        top: 40px;
+        right: 26px;
+    }
+
+    #three #rajma-chawal video {
+        right: 54px;
+        top: 23px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1.1rem;
+    }
+
+    #five #dropdown-btns button {
+        font-size: 1.2rem;
+    }
+
+    #five div p {
+        font-size: 1rem;
+    }
+
+    #six .container ul li {
+        width: 24vw;
+    }
+
+}
+
+
+
+@media only screen and (max-width:590px) {
+
+    main {
+        height: 54vh;
+    }
+
+
+    main::before{
+        height: 56vh;
+    }
+
+    main nav {
+        height: 51px;
+        width: 95vw;
+    }
+
+    main nav img {
+        width: 93px;
+    }
+
+    nav #eng-btn {
+        padding: 3px 19px;
+    }
+
+    nav #sign-btn {
+        padding: 5px 8px;
+    }
+
+    main section {
+        padding: 4px;
+        width: 93vw;
+    }
+
+    section #email {
+        width: 45vw;
+        padding: 6px 7px 7px 4px;
+    }
+
+    section #start-btn {
+        padding: 8px 7px;
+        margin-left: 6px;
+        font-size: medium;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 32px 13px;
+        gap: 20px;
+    }
+
+    main section> :nth-child(1) {
+        font-size: 1.9rem;
+    }
+
+    main section> :nth-child(2) {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    main section> :nth-child(3) {
+        font-size: 1rem;
+        margin: 1rem 0px;
+    }
+
+    #one .container #tv-section video {
+        top: 25px;
+        right: 17px;
+    }
+
+    #three #rajma-chawal video {
+        right: 27px;
+        top: 12px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    #five #dropdown-btns button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #five div p {
+        font-size: 1rem;
+    }
+
+    #six .container ul li {
+        width: 36vw;
+    }
+
+}
